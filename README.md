@@ -40,11 +40,46 @@ source venv/bin/activate
 ```
 
 ## Penggunaan
+
+### 1. Buat file passwords.txt
+Buat file `passwords.txt` di direktori yang sama dengan script, berisi daftar password yang akan dicoba (satu password per baris):
+
+```bash
+# Contoh: copy dari file contoh
+cp passwords.txt.example passwords.txt
+
+# Atau buat manual
+nano passwords.txt
+```
+
+**Format file passwords.txt:**
+```
+password123
+12345678
+password
+admin
+qwerty
+```
+
+### 2. Edit konfigurasi di bruteforce.py
+Buka file `bruteforce.py` dan edit bagian bawah file:
+
 ```python
+# Contoh penggunaan
+username = 'target_username'  # Ganti dengan username target
+password_list = 'passwords.txt'  # Nama file password list
+brute_force_instagram(username, password_list)
+```
+
+### 3. Jalankan script
+```bash
 python bruteforce.py
 ```
 
-**Catatan:** Pastikan Anda memiliki file `passwords.txt` yang berisi daftar password yang akan dicoba.
+**Catatan:** 
+- File `passwords.txt` harus ada di direktori yang sama dengan script
+- File `passwords.txt` tidak akan di-commit ke Git (untuk keamanan)
+- Gunakan file `passwords.txt.example` sebagai template
 
 ## Peringatan
 - Script ini hanya untuk tujuan edukasi

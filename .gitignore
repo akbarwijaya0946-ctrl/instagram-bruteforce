@@ -22,6 +22,7 @@ Thumbs.db
 # Passwords file (for security)
 passwords.txt
 *.txt
-# Allow requirements.txt (exception)
+# Allow requirements.txt and example files (exceptions)
 !requirements.txt
+!passwords.txt.example
 
