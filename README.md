@@ -30,4 +30,3 @@ python bruteforce.py
 
 ## Lisensi
 Gunakan dengan tanggung jawab Anda sendiri.
-
