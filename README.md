@@ -11,8 +11,32 @@ Script Python untuk melakukan brute force attack pada akun Instagram (hanya untu
 - beautifulsoup4
 
 ## Instalasi
+
+### Untuk Windows/Linux Standar:
 ```bash
 pip install requests beautifulsoup4
+```
+
+### Untuk Kali Linux (Menggunakan Virtual Environment):
+Kali Linux menggunakan Python yang dikelola secara eksternal, jadi perlu menggunakan virtual environment:
+
+```bash
+# Install pypy3-venv jika belum terinstall
+sudo apt install python3-venv
+
+# Buat virtual environment
+python3 -m venv venv
+
+# Aktifkan virtual environment
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+**Catatan:** Setiap kali membuka terminal baru, aktifkan virtual environment dengan:
+```bash
+source venv/bin/activate
 ```
 
 ## Penggunaan
